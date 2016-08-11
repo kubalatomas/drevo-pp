@@ -24,29 +24,57 @@ html, body {
     height: 100%;
 }
 
+
   .column {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
   }
-@media (min-width: 40rem) {
 
-  .row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+@media (min-width: 952px) {
+    #drevopp {
+        right: 85px;
+        top: 550px !important;
+        text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.11) !important;
+    }
+
+}
+
+
+@media (min-width: 880px) {
+
+     .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
   
-  .column.full { width: 100%; }
-  .column.two-thirds { width: 66.7%; }
-  .column.half { width: 50%; }
-  .column.third { width: 33.3%; }
-  .column.fourth { width: 25%; }
-  .column.flow-opposite { float: right; } 
+    .column.full { width: 100%; }
+    .column.two-thirds { width: 66.7%; }
+    .column.half { width: 50%; }
+    .column.third { width: 33.3%; }
+    .column.fourth { width: 25%; }
+    .column.flow-opposite { float: right; } 
 
-  #sekcia2 img, #sekcia3 img, #sekcia4 img, #sekcia5 img { width: 100%;}
+    #sekcia2 img, #sekcia3 img, #sekcia4 img, #sekcia5 img { width: 30%;}
+    nav {
+        float: right;
+        line-height: 41px;
+        margin-right: 5px;
+        display: initial !important;
+    }
+
+    #navigation {
+        text-align: initial !important;
+    }
+
+    .uvod_img_box {
+        width: 100% !important;
+    }
+
+    
 
 }
 
@@ -109,6 +137,7 @@ section p {
     width: 100%;
     z-index: 100;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 #logo {
@@ -124,6 +153,10 @@ section p {
     display: inline-block;
     float: right;
     width: 780px;
+}
+
+nav {
+    display: none;
 }
 
 #nav-menu {
@@ -162,12 +195,11 @@ section p {
     height: 100vh;
     background-origin: content-box;
     z-index: 90;
+    background-position: center center;
 }
 
-nav {
-    float: right;
-    line-height: 41px;
-    margin-right: 5px;
+img {
+    width: 70%;
 }
 
 nav a {
@@ -224,11 +256,11 @@ nav a:link,  nav a:visited, nav a:active {
     box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
     margin: 15px;
     overflow: hidden;
+    width: 75%;
 }
 
 .uvod_img_box img {
-    width: 330px;
-    height: 235px;
+    width: 100%;
 }
 
 .uvod_img_box p {
@@ -237,20 +269,7 @@ nav a:link,  nav a:visited, nav a:active {
     line-height: 15px;
 }
 
-.black_box {
-    height: 235px;
-    width: 330px;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.0);
-    transition: background-color 0.3s;
-    -webkit-transition: background-color 0.3s;
-}
 
-
-.black_box:hover {
-    background-color: rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-}
 
 /* sekcia2 */
 
@@ -260,9 +279,6 @@ nav a:link,  nav a:visited, nav a:active {
 
 
 
-#sekcia2 img {
-    width: 70%;
-}
 
 /* sekcia3 */
 
@@ -274,9 +290,6 @@ nav a:link,  nav a:visited, nav a:active {
     float: right;
 }
 
-#sekcia3 img {
-    width: 70%;
-}
 
 #paticka {
     color: #6B6B6B;
@@ -294,21 +307,8 @@ footer {
     border-top: 1px solid #C5C1C1;
 }
 
-.fa.fa-envelope {
-    color: rgba(255, 255, 255, 0.6);
-    border: solid 2px;
-    border-radius: 100px;
-    font-size: 40px;
-    padding: 10px;
-    position: relative;
-    float: right;
-    top: 17px;
-    transition: color 0.3s;
-}
 
-.fa.fa-envelope:hover {
-    color: rgba(255,255,255, 1);
-}
+
 
 
 
@@ -331,13 +331,15 @@ footer {
 
 #drevopp {
     position: absolute;
-    right: 85px;
-    top: 550px;
+    top: 40%;
+    
+    text-align: center;
     font-size: 140px;
     color: rgb(255,255,255);
     font-weight: bold;
-    text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.11);
+    text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
     z-index: 95; 
+
 }
 
 #sekcia4 {
@@ -345,14 +347,6 @@ footer {
 }
 
 
-#sekcia4 img {
-    width: 70%;
-}
-
-
-#sekcia5 img {
-    width: 70%;
-}
 
 #gallery {
     color: #A07432;
@@ -388,4 +382,18 @@ footer a:link,  footer a:visited, footer a:active {
 
 footer a {
     color: #A07432;
+}
+
+#text {
+    text-align: center;
+}
+
+.fa.fa-phone, .fa.fa-envelope {
+    margin-right: 15px;
+    color: #A07432
+}
+
+#sekcia5 a:link,  #sekcia5 a:visited, #sekcia5 a:active {
+    text-decoration: none;
+    color: inherit;
 }
