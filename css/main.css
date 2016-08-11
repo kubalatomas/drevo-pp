@@ -198,11 +198,10 @@ nav {
     background-size: cover;
     height: 850px;
     background-repeat: no-repeat;
-    overflow: hidden;
     height: 100vh;
-    background-origin: content-box;
+    width: 100%;
     z-index: 90;
-    /*background-position: center center;*/
+    background-position: center center;
 }
 
 img {
