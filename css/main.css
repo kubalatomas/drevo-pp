@@ -31,27 +31,36 @@ html, body {
     justify-content: center;
     align-items: center;
     display: flex;
+    flex-flow: column;
   }
 
-@media (min-width: 952px) {
+@media (min-width: 960px) {
     #drevopp {
-        right: 85px;
-        top: 550px !important;
-        text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.11) !important;
-        font-size: 140px !important;
+        text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.11);
+        font-size: 6rem !important;
     }
 
-    html { font-size: 120% !important; }
+    .hero {
+        /*align-items: flex-end !important;*/
+        justify-content: flex-end !important;
+        padding: 0 4rem 0 0;
+    }
+
+    html { font-size: 120%; }
 
 }
 
 
 @media (min-width: 880px) {
 
-     .row {
+    .row {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .row > .column .row {
+        flex-flow: column;
     }
   
     .column.full { width: 100%; }
@@ -193,15 +202,47 @@ nav {
 	color: inherit;
 }	
 
-#head {
-    background-image: url("../images/h1.jpg");
+html, body {
+    height: 100%;
+}
+
+.hero {
+    /*background-image: url("../images/h1.jpg");
     background-size: cover;
     height: 850px;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
     z-index: 90;
-    background-position: center center;
+    background-position: center center;*/
+    
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../images/h1.jpg");
+    background-size: cover;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/*.column > h1 {
+    font-size: 2rem;
+}*/
+
+#drevopp {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem 0 0;
 }
 
 img {
@@ -335,7 +376,7 @@ footer {
     color: rgba(255,255,255,1);
 }
 
-#drevopp {
+/*#drevopp {
     position: absolute;
     top: 40%;
     
@@ -346,7 +387,7 @@ footer {
     text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
     z-index: 95; 
 
-}
+}*/
 
 #sekcia4 {
     background-color: #F5F5F5;
